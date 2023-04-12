@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    overflow: scroll;
 }
 
 html {
@@ -39,12 +40,9 @@ html {
     flex-wrap: nowrap;
     padding-left: 20px;
     padding-right: 20px;
-    overflow: auto;
+    overflow: hidden;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 .plus_category_container {
     background-color: rgb(241, 241, 241);
