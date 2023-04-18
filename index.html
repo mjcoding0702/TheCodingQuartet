@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="prize-area.css" />
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_Unsplash.svg/1200px-Logo_of_Unsplash.svg.png"
+    />
     <script
     src="https://kit.fontawesome.com/b144e18fe2.js"
     crossorigin="anonymous"
@@ -19,49 +21,48 @@
   </head>
   <body>
     <!-- Ariff's Part - Nav Bar & Hero Section -->
-    <header class="top">
-        <img
+    <header class="navbarcontainer">
+        <a href="#"><img
           class="logo"
           src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/tbvbvipimh2camf5nb2q"
           alt="Unsplash Logo"
           width="60"
           height="auto"
         />
-        <div class="searchbar">
-          <!-- <button type="search"><img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" width="10"></button> -->
+        </a>
+        <div class="searchbarcontainer">
           <i class="fa-solid fa-magnifying-glass" style="color: #767676"></i>
           <input type="text" placeholder="Search high-resolution images" />
-          <!-- <button class="visualsearch" type="visualsearch"><img src="https://cdn-icons-png.flaticon.com/512/2782/2782926.png" width="10"></button> -->
           <i class="fa-solid fa-camera" style="color: #767676"></i>
         </div>
         <nav>
           <div>
             <ul class="navbar">
-              <li class="nav hidenav"><a href="#">Explore</a></li>
-              <li class="nav hidenav"><a href="#">Advertise</a></li>
-              <li class="nav gradient hidenav"><a href="#">Unsplash+</a></li>
-              <div class="divider hidenav"></div>
-              <li class="nav login"><a href="#">Login</a></li>
-                <li class="nav dropdown">
+              <li class="navlist hidenav"><a href="https://unsplash.com/explore">Explore</a></li>
+              <li class="navlist hidenav"><a href="https://unsplash.com/advertise">Advertise</a></li>
+              <li class="navlist gradient hidenav" style="cursor: default;">Unsplash+</li>
+              <div class="navdivider hidenav"></div>
+              <li class="navlist login"><a href="./login-page/loginpage.html">Login</a></li>
+                <li class="navlist dropdown">
                   <div class="button">
                     <button class="submitbutton">Submit a photo</button>
                   </div>
-                </li>
-                <div class="menu"><i class="fa-solid fa-bars fa-lg"></i></div>
+              </li>
+              <div class="menu"><i class="fa-solid fa-bars fa-lg"></i></div>
           </div>
         </nav>
       </header>
-      <section class="hero">
+      <section class="herocontainer">
       
               <!-- hero text section -->
         <div>
-          <h1 class="maintext">
+          <h1 class="herotext">
             Upgrade to <br />
             <span class="highlight">Unsplash+</span> and start creating with exclusive, royalty-free
             images.
           </h1>
-          <div class="benefitslist">
-            <ul class="benefitscontainer">
+          <div class="benefitscontainer">
+            <ul class="benefitslist">
               <li class="benefits">
                 <svg
                   width="16"
@@ -130,9 +131,9 @@
                   Get <b style="color: white">Unsplash+</b> for $5/month*
                 </button>
               </li>
-              <li class="benefits footer">
-                *when paid annually, limited <span class="highlight"> 66% </span> off special
-                <sup>1</sup>
+              <li class="benefits benefitsfooter">
+                *when paid annually, limited<span class="highlight" style="margin: 0px 3px;">66%</span>off special
+                <sup><a style="text-decoration: none;" href="#bottom">1</a></sup>
               </li>
             </ul>
           </div>
@@ -578,8 +579,7 @@
           <a class="plus_ctg_item" href="javascript:void(0);" data-target="plus_urban" id="urban_btn" onclick="showMe('plus_urban')">Urban</a>
           <a class="plus_ctg_item" href="javascript:void(0);" data-target="plus_renders" id="renders_btn" onclick="showMe('plus_renders')">Renders</a>
           <a class="plus_ctg_item" href="javascript:void(0);" data-target="plus_business" id="business_btn" onclick="showMe('plus_business')">Business</a>
-          <!-- <div class="plus_button_background" id="pill" onclick="showMe()"></div> -->
-      </div> 
+        </div> 
       </div>
 
       <!-- Pictures section -->
@@ -591,31 +591,24 @@
             <div class="plus_picture_1a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/mOf2ABBfdnY.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/mOf2ABBfdnY.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_1b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/mP0jGGcQxPA.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/mP0jGGcQxPA.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/hygwdof1QLo.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/hygwdof1QLo.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/dCcPIkcUjoA.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/dCcPIkcUjoA.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""
               />
             </div>
           </div>
@@ -623,47 +616,36 @@
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/NzuB3b7glmg.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/NzuB3b7glmg.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/8p5iSTcbLKU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/8p5iSTcbLKU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/oXDvTQu7O1c.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/oXDvTQu7O1c.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/-7S3ezhoHEU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/-7S3ezhoHEU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/PwakAYJvORQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/PwakAYJvORQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/cEmYircNnEA.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/sports/cEmYircNnEA.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""
               />
             </div>
           </div>
@@ -676,70 +658,60 @@
             <div class="plus_picture_1a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/6_dbAhl8w1I.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/6_dbAhl8w1I.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
             <div class="plus_picture_1b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/uhLDOghU4rc.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/uhLDOghU4rc.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/dISFfdvi9Yg.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/dISFfdvi9Yg.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/RUpHmovBMFE.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/RUpHmovBMFE.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
           </div>
           <div class="plus_item_3 plus_items">
             <div class="plus_picture_2a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/vH1dSO0M9I0.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/vH1dSO0M9I0.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
             <div class="plus_picture_2b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/Obm_NFMrRVk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/Obm_NFMrRVk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/D45CEj0QqsU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/D45CEj0QqsU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/PCqdVxs8Lu4.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/PCqdVxs8Lu4.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/S1zMM6g-gwM.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/S1zMM6g-gwM.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
             <div class="plus_picture_2b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/z8m8L8tw7z8.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/people/z8m8L8tw7z8.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
           </div>
         </div>
@@ -749,14 +721,12 @@
             <div class="plus_picture_1a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/WR8WCR73xU8.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/WR8WCR73xU8.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"alt=""/>
             </div>
             <div class="plus_picture_1b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/5p3sURoFpas.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""
-              />
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/5p3sURoFpas.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
@@ -781,36 +751,31 @@
             <div class="plus_picture_2b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/RTVuqf9by5E.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/RTVuqf9by5E.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/NF03-KFaifQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/NF03-KFaifQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/fg07jL6otGQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/fg07jL6otGQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"  alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/s4lvaXKUyxU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/s4lvaXKUyxU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/ipkLHYPyp2I.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/food/ipkLHYPyp2I.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
         </div>
@@ -822,146 +787,125 @@
             <div class="plus_picture_1a small_container">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/Uf9goVhElLc.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/Uf9goVhElLc.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_1b big_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/VVOwFuE5o2k.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/VVOwFuE5o2k.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a small_container">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/jDLZVj8Yf10.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/jDLZVj8Yf10.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/FE_GJZnCyvA.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/FE_GJZnCyvA.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_3 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/L-PZ8qShp3k.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/L-PZ8qShp3k.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/3rFxpRA2uAo.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/3rFxpRA2uAo.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/uEg8cj1AB6Y.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/uEg8cj1AB6Y.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/UoSK4wB8aoQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/UoSK4wB8aoQ.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/oyy_wsXi31Q.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/oyy_wsXi31Q.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/r6GMcWPV2eE.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/nature/r6GMcWPV2eE.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
         </div>
         <!-- urban -->
         <div
           id="plus_urban"
-          class="plus_urban_container plus_pictures_container"
-        >
+          class="plus_urban_container plus_pictures_container">
           <div class="plus_item_1 plus_items">
             <div class="plus_picture_1a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/LrmORzjnmX4.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/LrmORzjnmX4.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_1b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/_DYnFbQIko4.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/_DYnFbQIko4.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/uPlk4e8Kk2I.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/uPlk4e8Kk2I.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/2_92KK1g-Jo.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/2_92KK1g-Jo.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_3 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/qLxARy8Kkqk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/qLxARy8Kkqk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/LxXNVBDrgFg.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/LxXNVBDrgFg.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/1_Y9DfNVHsw.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/1_Y9DfNVHsw.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/uvAP27OH1cI.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/uvAP27OH1cI.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/nnADb_FdJjw.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/nnADb_FdJjw.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/0CZJCkbPXh0.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/urban/0CZJCkbPXh0.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
         </div>
@@ -974,70 +918,60 @@
             <div class="plus_picture_1a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/vKUED2XsWRw.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/vKUED2XsWRw.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_1b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/lbyWNYGCJXk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/lbyWNYGCJXk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/-qW8tgouhaY.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/-qW8tgouhaY.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/Og6rW1lgRNk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/Og6rW1lgRNk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_3 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/FPvZ2HfqgNs.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/FPvZ2HfqgNs.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/r9vEqliMW00.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/r9vEqliMW00.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/LMmS5nbCemk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/LMmS5nbCemk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/S5Zfr7VpU0k.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/S5Zfr7VpU0k.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/qxKnvb2HDHY.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/qxKnvb2HDHY.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/8bn59-WwQyk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/renders/8bn59-WwQyk.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
         </div>
@@ -1050,70 +984,60 @@
             <div class="plus_picture_1a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/-QT3vQffTFU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/-QT3vQffTFU.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_1b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/eBhmUebl8XY.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/eBhmUebl8XY.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_2 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/nW4MXHvqut8.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/nW4MXHvqut8.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/_flHJRmCBbs.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/_flHJRmCBbs.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_3 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/BAwKDZgJ8kM.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/BAwKDZgJ8kM.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/_cUArEPrOtU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/_cUArEPrOtU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_4 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/g-OV1gEcXUU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/g-OV1gEcXUU.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/iJqA68oJxtk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/iJqA68oJxtk.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
           </div>
           <div class="plus_item_5 plus_items">
             <div class="plus_picture_2a">
               <img
                 class="plus_small_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/CNVqHenTtrg.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/CNVqHenTtrg.jpg?dpr=1&auto=format&fit=crop&w=340&h=189&q=80" alt=""/>
             </div>
             <div class="plus_picture_2b">
               <img
                 class="plus_big_item"
-                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/GidR46cgnVw.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80"
-                alt=""/>
+                src="https://unsplash-assets.imgix.net/unsplashplus/feeds/business/GidR46cgnVw.jpg?dpr=1&auto=format&fit=crop&w=340&h=390.99999999999994&q=80" alt=""/>
             </div>
           </div>
         </div>
@@ -1446,5 +1370,6 @@
     </footer>
     <script src="unsplashplus.js"></script>
     <script src="main.js"></script>
+    <a name="bottom"></a>
   </body>
 </html>

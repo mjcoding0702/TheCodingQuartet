@@ -75,6 +75,7 @@ html {
     border-radius: 4px;
     border: 1px solid gray;
     margin-top: 10px;
+    font-size: 17px;
 }
 
 .password-label {
@@ -89,6 +90,7 @@ html {
     border-radius: 4px;
     border: 1px solid gray;
     margin-top: 10px;
+    font-size: 17px;
 }
 
 .login-btn {
